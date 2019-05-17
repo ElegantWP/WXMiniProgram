@@ -219,7 +219,7 @@ Page({
         "detail": detail + "+" + a.sugar[a.sugarIndex] + "+" + a.tem[a.temIndex],
         "number": 1,
         "sum": a.listData[a.currentType].foods[a.currentIndex].price + a.sizeEx,
-        "img": a.currentType + 1 + "-" + a.listData[a.currentType].foods[a.currentIndex].img,
+        "img": a.listData[a.currentType].foods[a.currentIndex].img,
         "desc": a.listData[a.currentType].foods[a.currentIndex].desc
       }
       cartList.push(addItem);

@@ -115,6 +115,7 @@ App({
   globalData: {
     userInfo: null,
     openId: null,
+    // apiHost: "http://4ienpt.natappfree.cc"
     apiHost: "http://127.0.0.1:8080",//电脑本地联调
     //手机预览 电脑手机需同网段
   }

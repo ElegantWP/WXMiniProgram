@@ -45,9 +45,13 @@
         <view class='gouwuche-price' style='color:white;font-size:18px'>¥ {{sumMonney-cutMonney}}</view>
       </view>
     </view>
+   
     <view class="submit-btn activity-color-bg" bindtap='gopay'>
-      <view class="submit-btn-label color-white">去支付</view>
+        <view class="submit-btn-label color-white">去支付</view>
     </view>
+
+
+   
   </view>
 
 </view>

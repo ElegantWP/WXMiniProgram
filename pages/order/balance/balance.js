@@ -47,7 +47,7 @@ Page({
   webSocketInit: function (openid, that) {
     wx.connectSocket({
       // url: 'ws://127.0.0.1:8080?token=' + openid,
-      url: 'ws://127.0.0.1:8080/' + openid,
+      url: 'ws://127.0.0.1:8080/order/' + openid,
     })
   },
   webSocketHandleMsg: function (openid, that) {
@@ -61,7 +61,7 @@ Page({
     wx.onSocketClose(function (res) {
       wx.connectSocket({
         // url: 'ws://127.0.0.1:8080?token=' + openid,
-        url: 'ws://127.0.0.1:8080/'+openid,
+        url: 'ws://127.0.0.1:8080/order/'+openid,
       })
       console.log('WebSocket 已关闭！')
     })
@@ -214,9 +214,15 @@ Page({
         console.log(res.data)
         wx.setStorageSync('orderInfo', res.data.msg);
         wx.setStorageSync('cutMoney', that.data.cutMonney);
+        // wx.onSocketOpen(function (res) {
+        //   console.log('WebSocket连接已打开！')
+        //   wx.sendSocketMessage({
+        //     data: "newOrder"
+        //   })
+        // })
         wx.sendSocketMessage({
-          data: "newOrder"
-        }) 
+          data: "您有新的订单，请注意查看"
+        })
         that.useCut()
         wx.hideLoading()
         wx.redirectTo({

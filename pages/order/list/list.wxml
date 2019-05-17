@@ -19,7 +19,7 @@
   <view class='orderList'>
     <view class="card" id="a{{index}}" wx:for="{{listData}}" wx:key="unique">
       <view class='info'>
-        <image style='border-radius:5px' src='{{"http://cdn.handsomebird.xin/t"+item.cartList[0].img+".jpg?imageView2/2/w/144/h/144/format/png/q/75|watermark/2/text/5aWI6Iy25rC05bOw/font/5a6L5L2T/fontsize/240/fill/I0ZGRkZGRg==/dissolve/100/gravity/NorthEast/dx/5/dy/5|imageslim"}}'
+        <image style='border-radius:5px' src='{{item.cartList[0].img}}'
           lazy-load></image>
         <view class='detail'>
           <view style='padding:5px' wx:key="unique">{{item.cartList[0].name}}

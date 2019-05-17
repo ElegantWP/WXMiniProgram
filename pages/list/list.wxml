@@ -11,7 +11,7 @@
       <view class='list-tab'>{{item.name}}</view>
       <view class='content-list' wx:for="{{item.foods}}" wx:key="unique" wx:for-item="items" wx:for-index="indexs">
         <view class='list-image-box'>
-          <image class="list-image" mode="widthFix" src='{{"http://cdn.handsomebird.xin/t"+items.type+"-"+items.img+".jpg?imageView2/2/w/144/h/144/format/png/q/75|watermark/2/text/5aWI6Iy25rC05bOw/font/5a6L5L2T/fontsize/240/fill/I0ZGRkZGRg==/dissolve/100/gravity/NorthEast/dx/5/dy/5|imageslim"}}' lazy-load></image>
+          <image class="list-image" mode="widthFix" src='{{items.img}}' lazy-load></image>
         </view>
         <view class='issue-name'>
           <view>{{items.name}}</view>

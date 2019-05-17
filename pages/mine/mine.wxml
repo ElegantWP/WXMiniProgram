@@ -1,11 +1,16 @@
 <!--pages/mine/mine.wxml-->
-<view class="top-mode">
-  <button class='auth' wx:if="{{!nickName}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">一键注册</button>
-  <view class='userinfo'>
-    <image class="userinfo-avatar" src="{{avatarUrl}}"></image>
-    <label style="color:white">{{nickName}}</label>
-  </view>
-</view>
+        <form bindsubmit="form_submit" report-submit='true'>
+
+    <view class="top-mode">
+        <button class='auth' wx:if="{{!nickName}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">一键注册</button>
+        <view class='userinfo'>
+            <button form-type="submit" class='formid'><image class="userinfo-avatar" src="{{avatarUrl}}"></image></button>
+        
+            <label style="color:white">{{nickName}}</label>
+        </view>
+    </view>
+</form>
+
 <view class='go-center card-box'>
   <view class='card-info'>
       <view bindtap='gocut' class='down-center' style='height:50%;border-bottom:1px solid #E3E3E3;'>

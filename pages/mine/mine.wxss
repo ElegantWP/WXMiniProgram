@@ -46,3 +46,10 @@
   margin-top: 50px;
   color: #FF0091;
 }
+.formid{
+  background: #FF0091;
+  border: none;
+}
+button[class="formid"]::after {
+  border: 0;
+}

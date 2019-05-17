@@ -7,10 +7,10 @@ Page({
   data: {
     //轮播图
     imgUrls: [
-      "http://cdn.handsomebird.xin/ncsf/lunbo/v1/lunbo1.png",
-      "http://cdn.handsomebird.xin/ncsf/lunbo/v1/lunbo2.png",
-      "http://cdn.handsomebird.xin/ncsf/lunbo/v1/lunbo3.png",
-      "http://cdn.handsomebird.xin/ncsf/lunbo/v1/lunbo4.png",
+      "http://itheimawang.cn/385b8f82-96a0-4d78-b634-7cf8e63e5102",
+      "http://itheimawang.cn/7f559da7-f2c5-42d6-bdcc-d6fe9f478a40",
+      "http://itheimawang.cn/078d1904-061d-4272-9b10-12a11909582f",
+      "http://itheimawang.cn/32a60619-25b4-4bf2-9cb0-e72d372ce230",
     ],
     logo:'../../images/logo.png',
     indicatorDots: true,

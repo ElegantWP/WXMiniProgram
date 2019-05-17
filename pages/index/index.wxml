@@ -1,9 +1,10 @@
 <!--index.wxml-->
 <view>
-  <view class='topTitle'>
-    <image src='../../images/logo.png' class='top'></image>
-    <image bindtap='goMine' class='mine' src='../../images/mine.png'></image>
-  </view>
+  
+    <view class='topTitle'>
+        <image src='../../images/logo.png' class='top'></image>
+        <image bindtap='goMine' class='mine' src='../../images/mine.png'></image>
+    </view>
   <!-- 顶部轮播图 -->
   <swiper class="{{isiphonex?'isInphoneX':'isInphone'}}" circular="true" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
     <block wx:for="{{imgUrls}}" wx:key="unique">

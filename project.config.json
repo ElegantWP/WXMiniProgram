@@ -5,7 +5,9 @@
 		"es6": true,
 		"postcss": false,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"nodeModules": false,
+		"autoAudits": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.5.2",

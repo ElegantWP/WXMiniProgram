@@ -81,6 +81,10 @@ Page({
       avatarUrl: userInfo.avatarUrl,
     })
   },
+  form_submit(e) {
+    wx.setStorageSync('formId', e.detail.formId);
+    console.log(wx.getStorageSync('formId'));
+  },
   getKeyInfo:function(){
     var that =this;
     wx.request({
