@@ -13,7 +13,8 @@ Page({
     model: 0,//1是预约模式  0是到店模式
     appointTime: "",
     cutText:"",
-    cutid:''
+    cutid:'',
+    formid:''
   },
 
   onShow: function () {
@@ -116,8 +117,6 @@ Page({
     })
   },
 
-
-
   gopay:function(){
     // wx.navigateTo({
     //   url: '../detail/detail'
@@ -177,7 +176,7 @@ Page({
   addOrder: function (out_trade_no,packages){
     wx.showLoading({
       title: '正在生成餐号',
-    })
+    })    
     var that = this;
     console.log({
         out_trade_no: out_trade_no,
@@ -192,7 +191,7 @@ Page({
         note:that.data.note,
       },),
     wx.request({
-      url: app.globalData.apiHost + '/addOrder?openid=' + wx.getStorageSync('openId'), //下单
+      url: app.globalData.apiHost + '/addOrder?openid=' + wx.getStorageSync('openId') + '&formId=' + wx.getStorageSync('formId'), //下单
       method: 'POST',
       data: {
         out_trade_no: out_trade_no,

@@ -45,7 +45,7 @@ App({
                 fail: function (err) {
                   wx.showModal({
                     title: '一键注册',
-                    content: '欢迎使用奈茶水峰自助点餐服务,请进入[个人中心]，完成一键注册',
+                    content: '欢迎使用  自助点餐服务,请进入[个人中心]，完成一键注册',
                     showCancel: false,
                     success: function (res) {
                       if (res.confirm) {
@@ -115,7 +115,8 @@ App({
   globalData: {
     userInfo: null,
     openId: null,
-    // apiHost: "http://4ienpt.natappfree.cc"
+    formId:null,
+    // apiHost: "http://vj5zt6.natappfree.cc"
     apiHost: "http://127.0.0.1:8080",//电脑本地联调
     //手机预览 电脑手机需同网段
   }
